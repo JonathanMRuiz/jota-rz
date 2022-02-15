@@ -1,0 +1,115 @@
+@import "../variables.scss";
+
+.intro {
+  display: flex;
+  height: 100vh;
+
+  .introLeft {
+    flex: 1;
+    .i-scroll{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+    }
+    .introLeftWrapper {
+      padding: 50px;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .introText {
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .introName {
+        font-size: 60px;
+      }
+      .introTitle {
+        height: 50px;
+        overflow: hidden;
+        .introTitleWrapper {
+          height: 100%;
+          animation: move 10s ease-in-out infinite alternate;
+          .introTitleItem {
+            height: 50px;
+            font-size: 30px;
+            font-weight: bold;
+            color: $color-red;
+            display: flex;
+            align-items: center;
+          }
+          
+        }
+      }
+    }
+  }
+
+  .introRight {
+    flex: 1;
+    position: relative;
+
+    .introBg {
+      clip-path: polygon(58% 0, 100% 0%, 100% 100%, 21% 100%);
+      background-color: $color-blue;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .imgContainer {
+      width: 250px;
+      background-color: red;
+
+      .introImg {
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 100%;
+        object-fit: cover;
+        position: absolute;
+      }
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@media screen and (max-width: 480px){
+  .intro{
+    flex-direction: column;
+    
+    .introRight{
+      .introBg {
+        
+        display:none;
+        
+      }
+    }
+
+    .introLeftWrapper{
+      padding: 10px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      height:100%;
+
+      .introDescription{
+        display:none;
+      }
+    }
+  }
+  
+}

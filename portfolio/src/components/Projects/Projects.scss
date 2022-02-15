@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.projects{
+    height:100vh;
+    background-color:$color-red;
+    display:flex;
+    justify-content:space-around;
+    .containerProject{
+        height:250px;
+        width:400px;
+        border: 1px solid white;
+        border-radius:15px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        
+        .borderProject{
+            height:150px;
+            width:300px;
+            border: 1px solid white;
+            
+        }
+    }
+}

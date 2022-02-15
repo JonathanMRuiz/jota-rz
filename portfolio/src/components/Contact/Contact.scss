@@ -1,0 +1,86 @@
+@import "../variables.scss";
+
+.contact {
+  height: 100vh;
+  display: flex;
+
+  .left {
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-size:cover;
+    .icons {
+      
+      margin: 0px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      i {
+        font-size: 35px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        height: 50px;
+        width: 50%;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 10px 0;
+        font-size: 15px;
+        padding: 10px;
+      }
+      textarea {
+        width: 50%;
+        margin: 10px 0;
+        font-size: 15px;
+        padding: 10px;
+      }
+      button {
+        border: none;
+        padding: 15px;
+        background-color: $color-blue;
+        color: white;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    height: 100%;
+    flex-direction: column;
+
+    .left {
+      .icons {
+        i {
+          font-size: 25px;
+        }
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
