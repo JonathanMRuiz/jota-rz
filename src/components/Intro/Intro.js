@@ -16,17 +16,20 @@ const Intro = () => {
           </div>
           <p className="introDescription">
             HELLO, I'M A JR FRONT-END DEVELOPER. I AM 25 YEARS OLD. I LIKE TO
-            LAYOUT WEB DESIGN USING REACT JS WHEN I CODE
-          </p>
+            LAYOUT WEB DESIGN USING REACT JS WHEN I CODE       
+          </p>    
         </div>
+        
+          
+       
         
       </div>
 
       <div className="introRight">
-        <div className="introBg"></div>
-        <div className="imgContainer">
-          
+        <div className="introBg">
         </div>
+        
+        
       </div>
     </div>
   )

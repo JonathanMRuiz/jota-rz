@@ -18,7 +18,7 @@ function App() {
   return (
 
     <div style={{
-      backgroundColor: darkMode ? '#222' : 'white',
+      backgroundColor: darkMode ? '#222' : '#76b5c534',
       color: darkMode && 'white'
     }}>
 

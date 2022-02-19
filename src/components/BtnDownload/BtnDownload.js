@@ -15,7 +15,7 @@ const BtnDownload = () => {
     
     return (
         <div className="btn">
-            <button onClick={() => {handleDownload( ruizJ, 'ruizJ.pdf')}}>Download CV</button>
+            <button onClick={() => {handleDownload( ruizJ, 'ruizJ.pdf')}}>CV English</button>
         </div>
     )
 }
